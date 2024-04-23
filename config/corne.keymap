@@ -262,14 +262,28 @@
         eng_colemak: eng_colemak {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(N0)) &to 0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp N0 &to 0>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LSHIFT>;
+
             label = "ENG_COLEMAK";
         };
 
         ru_qwerty: ru_qwerty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_1)) &to 1>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp NUMBER_1 &to 1>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LSHIFT>;
+
             label = "RU_QWERTY";
         };
     };
@@ -315,16 +329,16 @@
             bindings = <&kp DEL>;
         };
 
-        combo_lsqbracket {
+        combo_colon {
             timeout-ms = <50>;
             key-positions = <20 19>;
-            bindings = <&lsqbracket>;
+            bindings = <&colon>;
         };
 
-        combo_rsqbracket {
+        combo_semicolon {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&rsqbracket>;
+            bindings = <&semicolon>;
         };
 
         combo_numcomma {
@@ -451,9 +465,9 @@
 */
 
             bindings = <
-&kp CAPS   &kp FSLH  &kp N7  &kp N8     &kp N9           &kp MINUS    &kp EXCL  &kp AT          &kp HASH      &kp DOLLAR  &kp PERCENT  &kp RGUI
-&kp EQUAL  &kp STAR  &kp N4  &kp N5     &kp N6           &kp PLUS     &colon    &question       &kp STAR      &kp LPAR    &kp RPAR     &kp AMPS
-&kp COMMA  &kp DOT   &kp N1  &kp N2     &kp N3           &kp N0       &quote    &lguillement    &rguillement  &lbracket   &rbracket    &kp CARET
+&kp CAPS   &kp FSLH  &kp N7  &kp N8     &kp N9           &kp MINUS    &kp EXCL  &kp AT          &kp HASH     &kp DOLLAR  &kp PERCENT  &kp RGUI
+&kp EQUAL  &kp STAR  &kp N4  &kp N5     &kp N6           &kp PLUS     &colon    &question       &kp STAR     &kp LPAR    &kp RPAR     &kp AMPS
+&kp COMMA  &kp DOT   &kp N1  &kp N2     &kp N3           &kp N0       &quote    &rsqbracket     &lsqbracket  &lbracket   &rbracket    &kp CARET
                              &lt 5 TAB  &mt LSHFT SPACE  &trans       &trans    &mt RSHFT BSPC  &lt 5 DEL
             >;
         };
