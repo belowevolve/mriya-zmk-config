@@ -474,10 +474,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &ru_qwerty  &eng_colemak  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LC(Y)   &kp LC(Z)     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans      &trans        &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &ru_qwerty  &eng_colemak  &mwh SCROLL_UP      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(Y)   &kp LC(Z)     &mwh SCROLL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans        &trans              &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans      &trans        &trans              &trans  &trans  &trans
             >;
         };
 
@@ -500,10 +500,10 @@
 */
 
             bindings = <
-&mt CAPS BACKSPACE  &kp FSLH                &kp N7               &kp N8     &kp N9           &kp MINUS    &kp EXCL  &kp AT          &kp HASH     &kp DOLLAR  &kp PERCENT  &kp RGUI
-&mt ENTER EQUAL     &hml LEFT_WIN ASTERISK  &hml LCTRL NUMBER_4  &hml LEFT_ALT N5      &hml LEFT_SHIFT N6           &kp PLUS     &colon    &question       &kp STAR     &kp LPAR    &kp RPAR     &kp AMPS
-&numdot             &numcomma               &kp N1               &kp N2     &kp N3           &kp N0       &quote    &lsqbracket     &rsqbracket  &lbracket   &rbracket    &kp CARET
-                                                                 &lt 7 TAB  &mt LSHFT SPACE  &trans       &trans    &mt RSHFT BSPC  &lt 7 DEL
+&mt CAPS BACKSPACE  &kp FSLH                &kp N7               &kp N8            &kp N9              &kp MINUS    &kp EXCL  &kp AT          &kp HASH     &kp DOLLAR  &kp PERCENT  &kp RGUI
+&mt ENTER EQUAL     &hml LEFT_WIN ASTERISK  &hml LCTRL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_SHIFT N6  &kp PLUS     &colon    &question       &kp STAR     &kp LPAR    &kp RPAR     &kp AMPS
+&numdot             &numcomma               &kp N1               &kp N2            &kp N3              &kp N0       &quote    &lsqbracket     &rsqbracket  &lbracket   &rbracket    &kp CARET
+                                                                 &lt 7 TAB         &mt LSHFT SPACE     &trans       &trans    &mt RSHFT BSPC  &lt 7 DEL
             >;
         };
 
@@ -526,10 +526,10 @@
 */
 
             bindings = <
-&kp BSPC            &kp F1  &kp F2   &kp F3   &kp F4           &kp PLUS     &kp C_NEXT  &kp HOME        &kp PSCRN  &kp PG_UP     &kp END     &kp RGUI
-&mt LCTRL KP_ENTER    &hml LEFT_WIN F5   &hml LEFT_CONTROL F6   &hml LEFT_ALT F7    &hml LEFT_SHIFT F8           &kp KP_N0    &kp C_PLAY  &kp LEFT        &kp DOWN   &kp UP_ARROW  &kp RIGHT   &kp RCTRL
-&mt LALT EQUAL      &kp F9  &kp F10  &kp F11  &kp F12          &kp MINUS    &kp C_PREV  &kp END         &kp DOWN   &kp PG_DN     &kp C_MUTE  &kp RALT
-                                     &trans   &mt LSHFT SPACE  &lt 7 ESC    &lt 7 RET   &mt RSHFT BSPC  &trans
+&kp BSPC            &kp F1            &kp F2                &kp F3            &kp F4              &kp PLUS     &kp C_NEXT  &kp HOME        &kp PSCRN  &kp PG_UP     &kp END     &kp RGUI
+&mt LCTRL KP_ENTER  &hml LEFT_WIN F5  &hml LEFT_CONTROL F6  &hml LEFT_ALT F7  &hml LEFT_SHIFT F8  &kp KP_N0    &kp C_PLAY  &kp LEFT        &kp DOWN   &kp UP_ARROW  &kp RIGHT   &kp RCTRL
+&mt LALT EQUAL      &kp F9            &kp F10               &kp F11           &kp F12             &kp MINUS    &kp C_PREV  &kp END         &kp DOWN   &kp PG_DN     &kp C_MUTE  &kp RALT
+                                                            &trans            &mt LSHFT SPACE     &lt 7 ESC    &lt 7 RET   &mt RSHFT BSPC  &trans
             >;
         };
 
