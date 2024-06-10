@@ -500,9 +500,9 @@
 */
 
             bindings = <
-&mt DELETE BACKSPACE  &kp FSLH                &kp N7               &kp N8            &kp N9              &kp MINUS    &kp EXCL  &kp AT          &kp HASH     &kp DOLLAR  &kp PERCENT  &kp RGUI
-&mt ENTER EQUAL       &hml LEFT_WIN ASTERISK  &hml LCTRL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_SHIFT N6  &kp PLUS     &colon    &question       &kp STAR     &kp LPAR    &kp RPAR     &kp AMPS
-&numdot               &numcomma               &kp N1               &kp N2            &kp N3              &kp N0       &quote    &lsqbracket     &rsqbracket  &lbracket   &rbracket    &kp CARET
+&mt DELETE BACKSPACE  &kp FSLH                &kp N7               &kp N8            &kp N9              &kp MINUS    &kp EXCL  &kp AT          &kp HASH            &kp DOLLAR  &kp PERCENT  &kp RGUI
+&mt ENTER EQUAL       &hml LEFT_WIN ASTERISK  &hml LCTRL NUMBER_4  &hml LEFT_ALT N5  &hml LEFT_SHIFT N6  &kp PLUS     &colon    &question       &mt BACKSLASH PIPE  &kp LPAR    &kp RPAR     &kp AMPS
+&numdot               &numcomma               &kp N1               &kp N2            &kp N3              &kp N0       &quote    &lsqbracket     &rsqbracket         &lbracket   &rbracket    &kp CARET
                                                                    &lt 7 TAB         &mt LSHFT SPACE     &trans       &trans    &mt RSHFT BSPC  &lt 7 DEL
             >;
         };
